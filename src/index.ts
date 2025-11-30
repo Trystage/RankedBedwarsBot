@@ -868,7 +868,7 @@ const voiceQueueMap = new Collection();
             return message.reply(`${user.tag}'s lose message has been changed.`);
         }
 
-        if(message.content.toLowerCase().startsWith('=i' || message.content.toLowerCase().startsWith('=info'))) {
+        if(message.content.toLowerCase().startsWith('=i') || message.content.toLowerCase().startsWith('=info')) {
 
             if(Constants.CHAT === message.channel.id) {
                 return message.reply(createEmbed(`<@${message.author.id}> commands are disabled in this channel.`, "RED"));
